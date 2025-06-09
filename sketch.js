@@ -296,7 +296,7 @@ function setup(){
             }
         },
         light: function() {
-            if (gameItem.picked_up && !window_object.game_over && !isPaused){
+            if (gameItem.picked_up && !window_object.game_over && !isPaused && !shadows.for_window){
                 if (keyIsDown(69) && gameItem.charge < 100){ // E - зарядка
                     gameItem.charge += 1;
                     this.lightActive = false;
